@@ -203,6 +203,7 @@ header .btn-contato button:hover{
 
 .menu-mobile .btn-fechar{
     padding: 20px 5%;
+    cursor:pointer;
 }
 
 .menu-mobile .btn-fechar i {
