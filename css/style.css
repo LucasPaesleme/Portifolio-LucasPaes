@@ -221,6 +221,7 @@ section.top-site{
 section.top-site .flex{
     align-items: center;
     justify-content: center;
+    flex-direction: column-reverse;
     gap: 90px;
 }
 
@@ -481,26 +482,31 @@ section.portifolio h3 span{
 
 }
 
+
 .img-port{
     width: 360px;
-    height: 460px;
+    height: 360px;
     background-size: cover;
     background-position: 100% 0%;
-    transition: 3s;
+    transition: 8s;
     border-radius: 50px;
-    cursor: pointer;
     position: relative;
     border: 1px solid #000;
 }
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+}
+
+
 
 .none-list{
    text-decoration: none;
    color: #000;
 }
 
-.img-port:hover{
-    background-position: 100% 100%;
-}
+
 
 .overlay{
     position: absolute;
@@ -508,16 +514,21 @@ section.portifolio h3 span{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00000019;
+    background-color: #00000055;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: bold;
-    color: #000;
     opacity: 0;
     transition: .5s;
+}
+
+
+
+.overlay a{
+    color: #03a9ea;
 }
 
 .overlay:hover{
@@ -534,6 +545,7 @@ section.portifolio .flex{
 /* CURRICULO SECTION */
 
 section.curriculo{
+    margin: 6rem 0;
     padding: 80px 4%;
     display: flex;
     justify-content: center; 
@@ -550,8 +562,10 @@ section.curriculo h3{
   
 
 section.curriculo li{
-    line-height: 20px;
+    line-height: 25px;
     font-weight: bold;   
+    list-style: none;
+    text-align: center;
 }
 /* --------------------------------------------------------------- */
 
