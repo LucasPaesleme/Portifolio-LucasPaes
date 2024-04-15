@@ -94,6 +94,9 @@ html{
 /*HEADER STYLE*/
 header{
     padding: 10px 4%;
+    background-color:#e1ecf0;
+    border-bottom: 1px solid#ddd;
+    height: 4.2rem;
 }
 
 
@@ -130,9 +133,9 @@ header .btn-contato button{
 }
 
 header nav.menu-desktop a:hover{
-    color: #000;
-    transform: scale(1.1);
-    transition: .2s;
+    color: #21282b;
+    transform: scale(1.2);
+    transition: .3s;
 }
 
 
@@ -279,6 +282,7 @@ section.top-site .flex{
 
 section.skills{
     padding: 40px 4%;
+    
    
 }
 section.skills .flex{
@@ -668,6 +672,8 @@ footer{
         left: 0;
         width: 100%;
         z-index: 100; 
+        background-color: transparent;
+        border-bottom: none;
       }
       .logo {
         margin-left: -10px;
@@ -712,7 +718,7 @@ footer{
      }
      /* SKILLS */
      .skills{
-         margin-top: -8em;
+         margin-top: 2rem;
      }
      .skills .txt-skils{
         padding-bottom: 1em;
@@ -761,6 +767,10 @@ footer{
  }
  @media screen and (max-width:330px){
     /* CURRICULO */
+    header{
+        background-color: transparent;
+        border-bottom: none;
+    }
     .curriculo-container{
         width: 250px;
     }
