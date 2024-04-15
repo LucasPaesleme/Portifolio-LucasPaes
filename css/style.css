@@ -554,7 +554,7 @@ section.curriculo{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    box-shadow: 0 0 10px 20px #9ae0eda2 ;
+    box-shadow: 0 0 40px 10px #9ae0eda2;
 }
 
 section.curriculo h3{
