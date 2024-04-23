@@ -152,7 +152,7 @@ header nav.menu-desktop a:hover {
 header .btn-contato button:hover {
     box-shadow: 0px 0px 8px #00000082;
     color: #fff;
-    transform: scale(1.10);
+    transform: scale(1.02);
     transition: .2s;
 }
 
