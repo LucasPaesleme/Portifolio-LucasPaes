@@ -1,5 +1,5 @@
 /*RESET / STYLE GERAL*/
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -7,49 +7,57 @@
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
+    font-variation-settings: "wdth" 100;
 
 }
-:root{
-    --white:#ffff;
-    --dark:#21282b;
-    --blue1:#afd5db;
-    --blue2:#9cdbeb;
+
+:root {
+    --white: #ffff;
+    --dark: #121111;
+    --blue1: #afd5db;
+    --blue2: #9cdbeb;
 }
 
 /*BODY STYLE*/
-body{
-    background-color: var(--white);
-    height: 100vh;
+
+body {
     scroll-behavior: smooth;
+}
+
+.background {
+    background-image: url(../assets/gif\ background.gif);
+    opacity: 0.96;
 
 }
 
 /* --------------------------------------------------------------- */
 
 /*INTERFACE*/
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
-h3.title{
+
+h3.title {
     text-align: center;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-::selection{
+::selection {
     color: #03a9ea;
-    background-color:#6e6e6e;
+    background-color: #6e6e6e;
 }
-::-moz-selection{
+
+::-moz-selection {
     color: #03a9ea;
-    background-color:#6e6e6e;
+    background-color: #6e6e6e;
 }
 
 
@@ -62,23 +70,24 @@ html{
     border-radius: 5px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
 /* --------------------------------------------------------------- */
 
 /*RESET LOGO*/
-.logo{
+.logo {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     transition: .2s;
 
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.1);
-    
+
 }
 
 
@@ -92,36 +101,37 @@ html{
 
 
 /*HEADER STYLE*/
-header{
+header {
     padding: 10px 4%;
-    background-color:#e1ecf0;
+    background-color: #e1ecf0;
     border-bottom: 1px solid#ddd;
     height: 4.2rem;
 }
 
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #6e6e6e;
     display: inline-block;
-   
+
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
-header nav.menu-desktop ul li{
+
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-header .btn-contato button{
+header .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 700px;
@@ -132,14 +142,14 @@ header .btn-contato button{
     cursor: pointer;
 }
 
-header nav.menu-desktop a:hover{
+header nav.menu-desktop a:hover {
     color: #21282b;
     transform: scale(1.2);
     transition: .3s;
 }
 
 
-header .btn-contato button:hover{
+header .btn-contato button:hover {
     box-shadow: 0px 0px 8px #00000082;
     color: #fff;
     transform: scale(1.10);
@@ -150,12 +160,12 @@ header .btn-contato button:hover{
 
 /* MENU MOBILE */
 .btn-abrir-menu i {
-    color: #000;
+    color: #ffff;
     font-size: 40px;
 }
 
-.overlay-menu{
-    background-color: #0000009c;
+.overlay-menu {
+    background-color: #00000072;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -163,11 +173,11 @@ header .btn-contato button:hover{
     left: 0;
     z-index: 8888;
     display: none;
-    
+
 }
 
-.menu-mobile{
-    background-color:azure;
+.menu-mobile {
+    background-color: var(--blue2);
     height: 100%;
     width: 0%;
     overflow: hidden;
@@ -176,22 +186,24 @@ header .btn-contato button:hover{
     right: 0;
     z-index: 9999;
     transition: .2s;
-    
+
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
-.menu-mobile.abrir-menu ~ .overlay-menu{
-    display: block ;    
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
     display: flex;
     flex-direction: column;
 }
-.menu-mobile nav ul a{
+
+.menu-mobile nav ul a {
     color: #000;
     font-size: 20px;
     font-weight: 500;
@@ -199,12 +211,12 @@ header .btn-contato button:hover{
     display: block;
 }
 
-.menu-mobile nav ul a:hover{
+.menu-mobile nav ul a:hover {
     background-color: #87CEEB;
     color: #fff;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 20px 5%;
 }
 
@@ -217,42 +229,43 @@ header .btn-contato button:hover{
 
 
 /* TOP SITE STYLE */
-section.top-site{
-    padding: 180px 4%;   
+section.top-site {
+    padding: 180px 4%;
 }
 
-section.top-site .flex{
+section.top-site .flex {
     align-items: center;
     justify-content: center;
     flex-direction: column-reverse;
     gap: 90px;
 }
 
-.top-site h1{
+.top-site h1 {
     font-size: 40px;
     line-height: 38px;
-    color: #000;
+    color: #FFFF;
 }
 
 
-.top-site .txt-top-site h1 span.dot{
+.top-site .txt-top-site h1 span.dot {
     color: #87CEEB;
     font-weight: bolder;
 }
 
-.top-site .txt-top-site p{
+.top-site .txt-top-site p {
     font-size: 18px;
     margin: 25px 0;
     font-style: italic;
+    color: #ffff;
 }
 
-.top-site .txt-top-site h1 span.dot{
+.top-site .txt-top-site h1 span.dot {
     color: #87CEEB;
     font-weight: bolder;
 }
 
 /* SELFIE STYLE */
-.selfie{
+.selfie {
     border: 2px solid #2c2c2c;
     border-radius: 100px;
     background-color: #000000da;
@@ -261,218 +274,30 @@ section.top-site .flex{
     padding-top: -100px;
 }
 
-.top-site .img-top-site img{
+.top-site .img-top-site img {
     position: relative;
     animation: flutuante 2s ease-in-out infinite alternate;
 
 }
-@keyframes flutuante{
-    0%{
+
+@keyframes flutuante {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* --------------------------------------------------------------- */
 
-
-/* SKILLS STYLES */
-
-section.skills{
-    padding: 40px 4%;
-    
-   
-}
-section.skills .flex{
-    gap: 60px;
-
-}
-
-.skills h2.title{
-    font-size: 38px;
-    text-align: center;
-}
-.txt-skils p{
-    text-align: center;
-    color: #03a9ea;
-    font-weight: bold;
-    line-height: 3px;
-    opacity: 0.6;
-    padding-bottom: 20px;
-}
-
-section.skills .skills-box{
-    padding: 20px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .2s;
-}
-
-section.skills .skills-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #87CEEB;
-}
-
-
-section.skills img{
-    width: 100px;
-    height: 100px;
-}
-
-.svg-html:hover , .svg-css:hover, .svg-github:hover,
-.svg-js:hover, .svg-bootstrap:hover{
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-.skills , .txt-html , .txt-css , 
-.txt-github ,
-.txt-js , .txt-bootstrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 4%;
-
-}
-.skills, .txt-html p , .txt-css p , .txt-github p,
-.txt-js p, .txt-bootstrap p{
-    text-align: center;
-    font-style: italic;
-} 
-
-/* --------------------------------------------------------------- */
-
-
-/*BTNS*/
-
-
-.float-btn-whats{
-    position: fixed;
-    bottom:140px;
-    left:30px;
-    font-size:30px;
-    background-color: #01e675;
-    border-radius: 50px;
-    padding: 3px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    z-index: 100;
-    box-shadow: 2px 2px 2px #c0bdbd;
-
-} 
-    
-.float-btn-whats .fab{
-    padding-top : 9px;
-    
-}
-    
-.float-btn-whats:hover{
-    background-color: #fff;
-    color: #029e3b;
-    font-weight: 900;
-    box-shadow: 2px 2px 2px #5fe69058;
-}
-
-/* BTN INICIO */
-.btn-inicio{
-    position: fixed;
-    bottom:140px;
-    right:30px;
-    font-size:30px;
-    background-color: #87CEEB;
-    border-radius: 50px;
-    padding: 2px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    z-index: 100;
-    box-shadow: 2px 2px 2px #c0bdbd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.btn-inicio:hover{
-    background-color: #9ad3ea91;
-    font-weight: 900;
-    box-shadow: 2px 2px 2px #4fb6cb84;
-}
-
-/* BTN DARK */
-
-
-
-/* --------------------------------------------------------------- */
-
-/* ESTILO SOBRE */
-
-section.sobre{
-    padding: 40px 4%;
-}
-
-.img-sobre .selfie-sobre{
-    border-radius: 60px;
-    padding: 10px;  
-    width: 350px;  
-    height: 400px;
-}
-
-section.sobre .flex{
-    align-items: center;
-    gap: 60px;
-}
-.sobre .txt-sobre{
-    color: #000;
-}
-
-.sobre .txt-sobre h2{
-    font-size: 40px;
-    line-height: 35px;
-    margin-bottom: 30px;
-}
-.sobre .txt-sobre h2 span{
-    color: #87CEEB;
-    display: block;
-}
-
-.sobre .txt-sobre p{
-    margin: 8px 0;
-    line-height: 25px;
-    text-align: justify;
-    line-height: 20px;
-}
-
-.sobre .txt-sobre .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color:#87CEEB;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    
-}
-
-.sobre .txt-sobre .btn-social button:hover{
-    box-shadow: 0 0 8px #87cfeb8f;
-    transform: scale(1.1);
-    transition: .2s;
-}
-
-/* --------------------------------------------------------------- */
-
 /* PORTIFÓLIO */
 
-section.portifolio{
+section.portifolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #9ae0eda2;
+    color: #ffff;
 }
 
 section.portifolio h3 {
@@ -481,13 +306,14 @@ section.portifolio h3 {
     text-align: center;
     margin-bottom: 50px;
 }
-section.portifolio h3 span{
+
+section.portifolio h3 span {
     color: #87CEEB;
 
 }
 
 
-.img-port{
+.img-port {
     width: 360px;
     height: 360px;
     background-size: cover;
@@ -495,24 +321,24 @@ section.portifolio h3 span{
     transition: 8s;
     border-radius: 50px;
     position: relative;
-    border: 1px solid #000;
+    border: 1px solid #DDDD;
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
 
 }
 
 
 
-.none-list{
-   text-decoration: none;
-   color: #000;
+.none-list {
+    text-decoration: none;
+    color: #000;
 }
 
 
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -530,17 +356,223 @@ section.portifolio h3 span{
 }
 
 
-
-.overlay a{
+.overlay a {
     color: #03a9ea;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
 }
 
-section.portifolio .flex{
+section.portifolio .flex {
     gap: 90px 4%;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* SKILLS STYLES */
+
+section.skills {
+    padding: 40px 4%;
+    color: #ffff;
+
+}
+
+section.skills .flex {
+    gap: 60px;
+
+}
+
+.skills h2.title {
+    font-size: 38px;
+    text-align: center;
+}
+
+.txt-skils p {
+    text-align: center;
+    color: #03a9ea;
+    font-weight: bold;
+    line-height: 3px;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
+
+section.skills .skills-box {
+    padding: 20px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+section.skills .skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #87CEEB;
+}
+
+
+section.skills img {
+    width: 100px;
+    height: 100px;
+}
+
+.svg-html:hover,
+.svg-css:hover,
+.svg-github:hover,
+.svg-js:hover,
+.svg-bootstrap:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.skills,
+.txt-html,
+.txt-css,
+.txt-github,
+.txt-js,
+.txt-bootstrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 4%;
+
+}
+
+.skills,
+.txt-html p,
+.txt-css p,
+.txt-github p,
+.txt-js p,
+.txt-bootstrap p {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+/*BTNS*/
+
+
+.float-btn-whats {
+    position: fixed;
+    bottom: 140px;
+    left: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    border-radius: 50px;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+
+}
+
+.float-btn-whats .fab {
+    padding-top: 9px;
+
+}
+
+.float-btn-whats:hover {
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px #5fe69058;
+}
+
+/* BTN INICIO */
+.btn-inicio {
+    position: fixed;
+    bottom: 140px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #87CEEB;
+    border-radius: 50px;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn-inicio:hover {
+    background-color: #9ad3ea91;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px #4fb6cb84;
+}
+
+/* BTN DARK */
+
+
+
+/* --------------------------------------------------------------- */
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    padding: 40px 4%;
+}
+
+.img-sobre .selfie-sobre {
+    border-radius: 60px;
+    padding: 10px;
+    width: 350px;
+    height: 400px;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #FFFF;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #87CEEB;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 8px 0;
+    line-height: 25px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #87CEEB;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+    box-shadow: 0 0 8px #87cfeb8f;
+    transform: scale(1.1);
+    transition: .2s;
 }
 
 /* --------------------------------------------------------------- */
@@ -548,62 +580,71 @@ section.portifolio .flex{
 
 /* CURRICULO SECTION */
 
-section.curriculo{
+section.curriculo {
     margin: 6rem 0;
     padding: 80px 4%;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 0 40px 10px #9ae0eda2;
+
 }
 
-section.curriculo h3{
+section.curriculo h3 {
     text-align: center;
     font-size: larger;
     font-weight: bolder;
     text-decoration: underline;
-    
-}
-  
+    color: #ffff;
 
-section.curriculo li{
+}
+
+
+section.curriculo li {
     line-height: 25px;
-    font-weight: bold;   
+    font-weight: bold;
     list-style: none;
     text-align: center;
+    color: #ffff;
 }
+
 /* --------------------------------------------------------------- */
 
 /* SECTION FALE COMIGO */
-section.contato-section{
+section.contato-section {
     padding: 80px 4%;
+    color: #ffff;
 }
-.header-footer h2, .txt-header{
+
+.header-footer h2,
+.txt-header {
     text-align: center;
 }
 
-.header-footer p{
+.header-footer p {
     color: #87CEEB;
     font-weight: 600;
 }
 
 .contatos-footer {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    gap:  20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     margin-top: 4em;
 
 }
 
-.email,.cel-footer{
+.email,
+.cel-footer {
     background-color: #87CEEB;
     border-radius: 10px;
     padding: 20px;
     width: 30em;
 }
 
-.img-email, .img-cel-footer{
+.img-email,
+.img-cel-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -611,7 +652,8 @@ section.contato-section{
 }
 
 
-.email:hover, .cel-footer:hover{
+.email:hover,
+.cel-footer:hover {
     transition: .3s;
     background-color: #ea0303;
     color: #fff;
@@ -621,41 +663,50 @@ section.contato-section{
 /* --------------------------------------------------------------- */
 
 /* FOOTER SECTION */
-footer{
-    padding: 2em 4%;
-    background-color: #acc8d134;
-    margin-top: 100px;
-
+footer {
+    margin-top: 4rem;
+    background-color: #21282b;
+    line-height: 5px;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 1em;
+    margin-bottom: 5px;
 }
 
 
 
-.social-media{
+.social-media {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
+
 }
 
+.social-media a {
+    transition: .2s;
+}
 
-.txt-footer{
-    padding: 2em;
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.txt-footer {
+    padding: 1em;
     text-align: center;
+    color: #ffff;
 }
 
-.txt-footer a{
+.txt-footer a {
     color: inherit;
     text-decoration: none;
 }
 
-.txt-footer span{
+.txt-footer span {
     color: #03a9ea;
     font-weight: bolder;
 }
@@ -664,7 +715,7 @@ footer{
 
 /* RESPONSIVE @MEDIA QUER */
 
-@media screen and (max-width:1020px){
+@media screen and (max-width:1020px) {
 
     /* MENU MOBILE */
     header {
@@ -672,112 +723,164 @@ footer{
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 100; 
+        z-index: 100;
         background-color: transparent;
         border-bottom: none;
-      }
-      .logo {
+    }
+
+    .logo {
         margin-left: -10px;
         padding-left: -10px;
-      }
+    }
+
     /* CABEÇALHO */
-     .menu-desktop, .btn-contato{
-         display: none;
-     }
-     section.top-site{
-        margin-top: -4em;
-     }
-     /* CLASSES GERAIS */
-     .flex{
-         flex-direction: column;
-     }
-     .top-site .flex{
-         flex-direction: column-reverse;
-     }
-     .interface{
-         margin: 15px;
-     }
-     /* TOP SITE */
-     .top-site h1{
-         font-size: 24px;
-         line-height: 25px;
-     }
- 
-     /* SOBRE */
-     .sobre .txt-sobre h2{
-         font-size: 30px;
-         line-height: 30px;
-         margin-bottom: 30px;
-     }
-     .img-sobre .selfie-sobre{
-         padding: 30px;  
-         width: 150;  
-         height: 350px;
-     }
-     .sobre .txt-sobre p{
-         font-size: 15px;
-     }
-     /* SKILLS */
-     .skills{
-         margin-top: 2rem;
-     }
-     .skills .txt-skils{
-        padding-bottom: 1em;
-     }
-     .ht-icon, .css-icon, .github-icon, .git-icon, .bootstrap-icon{
-         padding-bottom: 1em;
-     }
-     /* PORTIFOLIO */
-     .flex{
-         align-items: center;
-         justify-content: center;
-     }
-     .portifolio .img-port{
-         width: 35vh;
-     }
-     /* CURRICULO */
-     .curriculo-container{
-         width: 290px;
-         line-height: 2em;
-     }
-     .curriculo-container li{
-         word-wrap: break-word;
-     }
-     /* CONTATO-SECTION */
-     .email, .cel-footer{
-         width: 18em;
-         
-     }
-     /* BTNS */
-     .float-btn-whats{
-         bottom:200px;
-         left: 10px;
-     }
-     .btn-inicio{
-         left:10px;
-     }
-     .float-btn-whats, .btn-inicio{
-         opacity: 0.6;
-         width: 40px;
-     }
- }
- @media screen and (min-width:1020px){
-    .btn-abrir-menu{
+    .menu-desktop,
+    .btn-contato {
         display: none;
-    }  
- }
- @media screen and (max-width:330px){
+    }
+
+    section.top-site {
+        margin-top: -4em;
+    }
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .top-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    .interface {
+        margin: 15px;
+    }
+
+    /* TOP SITE */
+    .top-site h1 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    /* SOBRE */
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .img-sobre .selfie-sobre {
+        padding: 30px;
+        width: 150;
+        height: 350px;
+    }
+
+    .sobre .txt-sobre p {
+        font-size: 15px;
+    }
+
+    /* SKILLS */
+    .skills {
+        margin-top: 2rem;
+    }
+
+    .skills .txt-skils {
+        padding-bottom: 1em;
+    }
+
+    .ht-icon,
+    .css-icon,
+    .github-icon,
+    .git-icon,
+    .bootstrap-icon {
+        padding-bottom: 1em;
+    }
+
+    /* PORTIFOLIO */
+    .flex {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portifolio .img-port {
+        width: 35vh;
+    }
+
     /* CURRICULO */
-    header{
+    .curriculo-container {
+        width: 290px;
+        line-height: 2em;
+    }
+
+    .curriculo-container li {
+        word-wrap: break-word;
+    }
+
+    /* CONTATO-SECTION */
+    .email,
+    .cel-footer {
+        width: 18em;
+
+    }
+
+    /* BTNS */
+    .float-btn-whats {
+        bottom: 200px;
+        left: 10px;
+    }
+
+    .btn-inicio {
+        left: 10px;
+    }
+
+    .float-btn-whats,
+    .btn-inicio {
+        opacity: 0.6;
+        width: 40px;
+    }
+
+    /* FOOTER */
+
+    .txt-footer {
+        line-height: 20px;
+    }
+}
+
+/* Min-width 1020px */
+
+@media screen and (min-width:1020px) {
+
+    .btn-abrir-menu {
+        display: none;
+    }
+}
+
+/* Max-width 330px */
+
+@media screen and (max-width:330px) {
+
+    .logo {
+        display: none;
+    }
+
+    /* CURRICULO */
+    header {
         background-color: transparent;
         border-bottom: none;
     }
-    .curriculo-container{
+
+    .curriculo-container {
         width: 250px;
     }
-         /* CONTATO-SECTION */
-         .email, .cel-footer{
-            width: 14em;
-            
-        }
+
+    /* CONTATO-SECTION */
+    .email,
+    .cel-footer {
+        width: 14em;
+
+    }
+
+    .txt-footer {
+        line-height: 20px;
+    }
 }
