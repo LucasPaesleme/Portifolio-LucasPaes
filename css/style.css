@@ -855,6 +855,18 @@ footer {
     }
 }
 
+/* MAX WIDTH 768PX */
+
+@media(max-width: 768px){
+    .logo {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        margin-left: auto;
+    }
+}
+
 /* Max-width 330px */
 
 @media screen and (max-width:330px) {
