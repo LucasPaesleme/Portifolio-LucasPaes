@@ -865,6 +865,10 @@ footer {
     .btn-abrir-menu {
         margin-left: auto;
     }
+
+    .img-port a{
+        font-size: 17px;
+    }
 }
 
 /* Max-width 330px */
