@@ -8,6 +8,6 @@
   
 <br />
 <img src="https://github.com/LucasPaeslp/Portif-lio-Lucas-Paes/assets/125366778/15486f30-1041-4e96-9691-87123e669822" alt="Imagem da pagina inicial do projeto de portifólio de Lucas Paes" />
-<video autoplay src="https://github.com/LucasPaeslp/Portif-lio-Lucas-Paes/assets/125366778/4ececce5-3561-433c-9a40-3e8277c81dd8" alt="" />
+<video autoplay src="https://github.com/LucasPaesleme/Portifolio-LucasPaes/assets/165165973/d89b5b5b-458f-42c7-867a-92c05e6776e9" alt="" />
 </div>
 
