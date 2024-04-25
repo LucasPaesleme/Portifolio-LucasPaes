@@ -25,8 +25,9 @@ body {
 }
 
 .background {
-    background-image: url(../assets/gif\ background.gif);
-    opacity: 0.96;
+    background-image: url(../assets/gif-background.webp);
+    opacity: 0.98;
+
 
 }
 
@@ -676,7 +677,6 @@ footer {
     padding: 1em;
     margin-bottom: 5px;
 }
-
 
 
 .social-media {
