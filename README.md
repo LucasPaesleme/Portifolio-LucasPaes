@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Primeiro projeto de Portfólio com ênfase em HTML e CSS.</h1>
 <p>Minha ideia foi estruturar o site com o máximo de interatividade sem precisar manipular a DOM.</p>
+<p> Busquei trabalhar com formatos de todos os assets que me dessem uma melhor otimização do site, e agora pretendo melhorar a acessibilidade do mesmo.</p>
 <p>Usei JS apenas para criar o efeito de "WRITER".</p>
 <p>Trabalhei medias queries com break points para mobile S, L e XL, e outros dispositivos.</p>
  
