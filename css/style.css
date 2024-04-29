@@ -354,12 +354,19 @@ section.portifolio h3 span {
     font-weight: bold;
     opacity: 0;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .overlay a {
     color: #03a9ea;
+    margin: 8px;
+    background-color: #ffff;
+    border-radius: 5px ;
+    opacity: 0.8;
 }
+
 
 .overlay:hover {
     opacity: 1;
@@ -367,7 +374,9 @@ section.portifolio h3 span {
 
 section.portifolio .flex {
     gap: 90px 4%;
+    
 }
+
 
 /* --------------------------------------------------------------- */
 
