@@ -36,8 +36,6 @@ body {
 .background {
     background-image: url(../assets/gif-background.webp);
     opacity: 0.98;
-
-
 }
 
 /* --------------------------------------------------------------- */
@@ -239,8 +237,11 @@ header .btn-contato button:hover {
 
 
 /* TOP SITE STYLE */
+
+
 section.top-site {
     padding: 180px 4%;
+
 }
 
 section.top-site .flex {
@@ -597,42 +598,13 @@ section.sobre .flex {
 /* --------------------------------------------------------------- */
 
 
-/* CURRICULO SECTION */
 
-section.curriculo {
-    margin: 6rem 0;
-    padding: 80px 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 40px 10px #9ae0eda2;
-
-}
-
-section.curriculo h3 {
-    text-align: center;
-    font-size: larger;
-    font-weight: bolder;
-    text-decoration: underline;
-    color: var(--white-theme);
-
-}
-
-
-section.curriculo li {
-    line-height: 25px;
-    font-weight: bold;
-    list-style: none;
-    text-align: center;
-    color: var(--white-theme);
-}
-
-/* --------------------------------------------------------------- */
 
 /* SECTION FALE COMIGO */
 section.contato-section {
     padding: 80px 4%;
     color: var(--white-theme);
+    margin-top: 6rem;
 }
 
 .header-footer h2,
@@ -683,7 +655,6 @@ section.contato-section {
 
 /* FOOTER SECTION */
 footer {
-    margin-top: 4rem;
     background-color: #21282b;
     line-height: 5px;
 }
@@ -749,7 +720,10 @@ footer {
     .logo {
         margin-left: -10px;
         padding-left: -10px;
-    }
+        display: none;
+
+        }
+
 
     /* CABEÇALHO */
     .menu-desktop,
@@ -824,12 +798,6 @@ footer {
         width: 35vh;
     }
 
-    /* CURRICULO */
-    .curriculo-container {
-        width: 290px;
-        line-height: 2em;
-    }
-
     .curriculo-container li {
         word-wrap: break-word;
     }
@@ -840,6 +808,7 @@ footer {
         width: 18em;
 
     }
+
 
     /* BTNS */
     .float-btn-whats {
@@ -858,7 +827,9 @@ footer {
     }
 
     /* FOOTER */
-
+    footer{
+        margin-top: -1rem;
+    }
     .txt-footer {
         line-height: 20px;
     }
@@ -902,10 +873,6 @@ footer {
     header {
         background-color: transparent;
         border-bottom: none;
-    }
-
-    .curriculo-container {
-        width: 250px;
     }
 
     /* CONTATO-SECTION */
