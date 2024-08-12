@@ -36,6 +36,9 @@ body {
 .background {
     background-image: url(../assets/gif-background.webp);
     opacity: 0.98;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* --------------------------------------------------------------- */
