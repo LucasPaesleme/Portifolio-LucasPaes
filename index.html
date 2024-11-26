@@ -1,272 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Paes LandingPage</title>
-    <link rel="shortcut icon" href="assets/logo.webp">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Lucas Paes Dev</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="Css/NavBar.css">
+    <link rel="stylesheet" href="Css/Home.css">
+    <link rel="stylesheet" href="Css/Sobre.css">
+    <link rel="stylesheet" href="Css/Skills.css">
+    <link rel="stylesheet" href="Css/Projetos.css">
+    <link rel="stylesheet" href="Css/Serviços.css">
+    <link rel="shortcut icon" href="Assets/images/FAV-ICO.png" type="image/x-icon">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fim google fonts-->
-    <script src="JavaScript/menu.js" defer></script>
-    <script src="JavaScript/tittleWriter.js" defer></script>
-    <script src="JavaScript/btn-inicio.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Cdns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Scripts -->
+    <script src="JavaScript/menu-mobile.js" defer></script>
+    <script src="JavaScript/typing.js" defer></script>
+    <!-- <script src="JavaScript/Scrolled.js" defer></script>
+    <script src="JavaScript/Markup-links.js" defer></script>
+    <script src="JavaScript/Slide-Txt.jsd" defer></script>
+    <script src="JavaScript/Hidden-btn-whats.js" defer></script> -->
+    <script crossorigin="anonymous" src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <script src="https://kit.fontawesome.com/seu_codigo_aqui.js" crossorigin="anonymous"></script>
+    
 </head>
-
 <body>
-    <div class="background">
-        <header>
-            <div class="interface">
-                <div class="logo">
-                    <a href="#sobre">
-                        <img src="assets/logo.webp" alt="Selfie de lucas Paes">
-                    </a>
-                </div><!--Logo-->
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projeto">Projetos</a></li>
-                        <li><a href="#Ferramentas">Ferramentas</a></li>
-                    </ul>
-                </nav>
-                <div class="btn-contato">
-                    <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank">
-                        <button>Contato</button>
-                    </a>
-                </div><!--Btn-Contato-->
-                <div class="btn-abrir-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div><!--btn-abrir-menu-->
-                <div class="menu-mobile" id="menu-mobile">
-                    <div class="btn-fechar">
-                        <i class="bi bi-x-lg"></i>
-                    </div><!--btn-fechar-->
-                    <nav>
-                        <ul>
-                            <li><a href="#inicio">Início</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#projeto">Projetos</a></li>
-                            <li><a href="#Ferramentas">Ferramentas</a></li>
-                            <li><a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp"
-                                    target="_blank">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div><!--menu-mobile-->
-                <div class="overlay-menu" id="overlay-menu"></div>
-            </div><!--Interface-->
-        </header>
-        <main>
-            <section class="top-site hidden" id="inicio">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="txt-top-site" id="txt-top-site">
-                            <h1 id="h1-top-site">Desvendando o código: Uma jornada de descobertas e criatividades <span class="dot">.</span></h1>
-                            <p id="p-top-site">&quot;A única maneira de fazer um ótimo trabalho é amar o que você faz. Se você ainda não encontrou, continue procurando. Não se acomode.&quot; - Steve Jobs.</p>
-                        </div><!--txt-top-site-->
-                        <div class="img-top-site">
-                            <img src="assets/perfil_2-removebg-preview.webp" alt="Selfie de Lucas Paes" class="selfie">
-                        </div><!--img-top-site-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--top-site-->
-            <section class="portifolio" id="projeto">
-                <div class="interface">
-                    <h3 class="title-port">Meu <span>portifólio.</span></h2>
-                        <div class="flex">
-                            <div class="img-port" style="background-image: url(assets/PORTFÓLIO-1.webp);">
-                                <div class="overlay" id="first-project">
-                                    <a style="text-decoration: none;"
-                                        href="https://github.com/LucasPaesleme/Portifolio-LucasPaes/"
-                                        target="_blank">Github</a>
-                                </div><!--overlay-->
-                            </div><!--img-port-->
-                            <div class="img-port"
-                                style="background-image: url(assets/projeto-formulario.webp); background-position: center;">
-                                <div class="overlay"><a style="text-decoration: none;"
-                                        href="https://github.com/LucasPaesleme/Projeto-Formulario-REFIT"
-                                        target="_blank">Formulário de chamados</a></div>
-                            </div><!--img-port-->
-                            <div class="img-port"
-                                style="background-image: url(assets/insta.webp); background-position: center; ">
-                                <div class="overlay"><a href="https://github.com/LucasPaesleme/home-insta-clone"
-                                        style="text-decoration: none;" target="_blank">Home Instagram Clone</a></div>
-                            </div><!--img-port-->
-                        </div><!--flex-->
-                </div><!--interface-->
-            </section><!--portifolio-->
-            <section class="skills" id="Ferramentas">
-                <div class="interface"><!--Delimitação do site(bordas)-->
-                    <div class="txt-skils">
-                        <h2 class="title">Ferramentas</h2>
-                        <p>Usadas nesse projeto.</p>
-                    </div><!--txt-skills-->
-                    <div class="flex">
-                        <div class="skills-box">
-                            <h3 class="title">HTML5</h3>
-                            <div class="svg-html">
-                                <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank"><img
-                                        src="assets/icon-html.svg" alt="logo do html 5" class="icone-ht"></a>
-                            </div><!--svg-html-->
-                            <div class="txt-html">
-                                <p>HTML5 &eacute; uma linguagem de marca&ccedil;&atilde;o para a World Wide Web e
-                                    &eacute;
-                                    uma tecnologia chave da Internet,<br> originalmente proposto por Opera Software.
-                                    &Eacute; a quinta vers&atilde;o da linguagem HTML.</p>
-                            </div><!--txt-html-->
-                        </div><!--html-->
-                        <div class="skills-box">
-                            <h3 class="title">CSS3</h3>
-                            <div class="svg-css">
-                                <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank"><img
-                                        src="assets/icon-css.svg" alt="Logo css3" class="css-icone"></a>
-                            </div><!--svg-css-->
-                            <div class="txt-css">
-                                <p>Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web,<br>
-                                    aplicado diretamente nas tags HTML, internamente dentro do cabeçalho ou ainda em um
-                                    documento externo.</p>
-                            </div><!--txt-css-->
-                        </div><!--css-->
-                        <div class="skills-box">
-                            <h3 class="title">JavaScript</h3>
-                            <div class="svg-js">
-                                <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank"><img
-                                        src="assets/icons8-javascript.svg" alt="logo JavaScript"></a>
-                            </div><!--svg-git-->
-                            <div class="txt-js">
-                                <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto
-                                    nível com tipagem dinâmica fraca e multiparadigma.<br>Juntamente com HTML e CSS, o
-                                    JavaScript é uma das três principais tecnologias da World Wide Web. </p>
-                            </div><!--txt-git-->
-                        </div><!--git-icon-->
-                        <div class="skills-box">
-                            <h3 class="title">Github</h3>
-                            <div class="svg-github">
-                                <a href="https://www.hostinger.com.br/tutoriais/o-que-github" target="_blank"><img
-                                        src="assets/icons8-github3.svg" alt="Logo Github"></a>
-                            </div><!--svg-github-->
-                            <div class="txt-github">
-                                <p>GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão
-                                    (VCS)
-                                    chamado Git.</p>
-                            </div><!--txt-github-->
-                        </div><!--github-icon-->
-                        <div class="skills-box">
-                            <h3 class="title">Bootstrap Icon</h3>
-                            <div class="svg-bootstrap">
-                                <a href="https://www.alura.com.br/artigos/bootstrap?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20987928442&hsa_grp=157916200306&hsa_ad=689395782879&hsa_src=g&hsa_tgt=dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw7-SvBhB6EiwAwYdCAS2RFp4w4UX_KdxzieVmuxKgaswvS6rx77hLnEgn4QgbcnowqGteHBoCtKsQAvD_BwE"
-                                    target="_blank"><img src="assets/icons8-bootstrap.svg" alt="Logo Bootstrap"></a>
-                            </div><!--svg-bootstrap-->
-                            <div class="txt-bootstrap">
-                                <p>Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de
-                                    sites
-                                    e aplicações responsivas de forma rápida e simples.</p>
-                            </div><!--txt-bootstrap-->
-                        </div><!--bootstrap-icon-->
-                    </div><!--flex-->
-                </div><!--interface-->
-            </section><!--skills-->
-            <div class="float-btn-whats">
-                <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" class="icon"
-                    target="_blank"><i class="bi bi-whatsapp"></i></a>
-            </div><!--float-btn-whats-->
-            <div class="btn-inicio" id="btn-inicio">
-                <a href="#"><i class="bi bi-rocket"></i>
+    <header class="head">
+        <div class="container-nav">
+            <div class="logo">
+                <a href="#home" aria-label="Voltar ao início">
+                    <img src="Assets/Images/Nova-Logo-white-teste.png" alt="Logo tipo de Lucas Paes Dev">
                 </a>
-            </div><!--btn-inicio-->
-            <section class="sobre" id="sobre">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="assets/perfil-1.webp" alt="Foto selfie de Lucas Paes" class="selfie-sobre">
-                        </div><!--img-sobre-->
-                        <div class="txt-sobre">
-                            <h2>Ol&aacute;&#128075;,<br>Muito prazer, <span>eu sou Lucas Paes.</span></h2>
-                            <p>Sou estudante de An&aacute;lise e Desenvolvimento de Sistemas e tamb&eacute;m
-                                desenvolvimento
-                                web.
-                                Minha história na área da tecnologia começa lá em 2015 quando com muito trabalho eu
-                                consigo
-                                comprar meu primeiro computador, lembro-me até hoje das configuração de hardware.</p>
-                            <p>Logo me apaixonei pela arquitetura, pelos softwares e etc, como venho de uma familia bem
-                                humilde, os estudos não puderam começar logo cedo devido às grandes limitações
-                                financeiras.
-                                E hoje após passar por diversas areas de TI, me encontro apaixonado por desenvolvimento,
-                                seja no front-end ou no back-end, acredito que com muito foco eu irei conseguir me
-                                tornar um
-                                desenvolvedor fullstack.
-                                E além disso eu sou casado e tenho 27 anos, e esse foi um breve resumo sobre mim.
-                            </p>
-                            <div class="btn-social">
-                                <a href="https://github.com/LucasPaesleme" target="_blank"><button><i
-                                            class="bi bi-github"></i></button></a>
-                                <a href="https://www.linkedin.com/in/lucasmatheus96/" target="_blank"><button><i
-                                            class="bi bi-linkedin"></i></button></a>
-                            </div><!--btn-social-->
-                        </div><!--txt-sobre-->
-                    </div><!--flex-->
-                </div><!--Interface-->
-            </section><!--Sobre--> 
-            <section class="contato-section">
-                <div class="interface">
-                    <div class="header-footer">
-                        <h2> Entre em contato comigo</h2>
-                        <p class="txt-header">Mande uma mensagem para mais informações.</p>
-                    </div><!--header-footer-->
-                    <div class="contatos-footer">
-                        <div class="email">
-                            <div class="img-email">
-                                <a href="mailto:paesleme1996@gmail.com"> <img src="assets/icons8-enviar-50.png" alt="">
-                                </a>
-                                <p>paesleme1996@gmail.com</p>
-                            </div><!--img-email-->
-                        </div><!--email-->
-                        <div class="cel-footer">
-                            <div class="img-cel-footer">
-                                <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp"
-                                    target="_blank">
-                                    <img src="assets/icons8-telefone-desligado-50.png" alt="icone telefone">
-                                </a>
-                                <p>(21)99406-6779</p>
-                            </div><!--img-cel--->
-                        </div><!--cel-footer-->
-                    </div><!--contatos-footer-->
-                </div><!--interface-->
-            </section><!--contato-section-->
-        </main>
-    </div><!--background-->
-        <footer>
-            <div class="interface">
-                <div class="logo-footer">
-                    <a href="#">
-                        <img src="assets/logo.webp" alt="Selfie de lucas Paes">
-                    </a>
-                </div><!--logo-footer-->
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/lucasmatheus96/" target="_blank">
-                        <img src="assets/icons8-linkedin.svg" alt="logo linkedin">
-                    </a>
-                    <a href="https://github.com/LucasPaesleme" target="_blank">
-                        <img src="assets/icons8-github2.svg" alt="logo github">
-                    </a>
-                    <a href="https://www.instagram.com/lucaspaeslp/" target="_blank">
-                        <img src="assets/icons8-instagram.svg" alt="logo instagram">
-                    </a>
-                    <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank">
-                        <img src="assets/icons8-whatsapp.svg" alt="logo whatsapp">
-                    </a>
+            </div><!--Logo-->
+            <nav id="nav"> 
+                <div class="hamburg-container">
+                    <label class="burger" for="burger">
+                        <input type="checkbox" id="burger" aria-label="Abrir Menu" aria-controls="menu" aria-haspopup="true" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </label>
                 </div>
+                <ul id="menu" role="menu">
+                    <li class="nav-itens"><a id="navlinks" href="#">Home</a></li>
+                    <li class="nav-itens"><a id="navlinks" href="#">Sobre</a></li>
+                    <li class="nav-itens"><a id="navlinks" href="#">Skills</a></li>
+                    <li class="nav-itens"><a id="navlinks" href="#">Projetos</a></li>
+                    <li class="nav-itens"><a id="navlinks" href="#">Serviços</a></li>
+                    <div class="button-container">
+                        <a href="https://wa.me/5521994066779?text=Ol%C3%A1%2C+Me+chame+no+whatsapp" target="_blank"><button class="nav-itens" id="contato">Contato</button></a>
+                    </div>
+                </ul>
+            </nav>
+        </div><!--container-nav-->
+    </header>
+    <section class="inicial" id="home">
+        <div class="interface">
+            <div class="initial-container">
+                <aside class="name-write">
+                    <h1 class="first-name">Lucas Paes</h1>
+                    <p class="write"></p>
+                </aside><!--inicial-->
+                <aside class="-initial-image">
+                    <img src="Assets/Images/NEW-IMAGE-PERFIL-1.webp" alt="Selfie de lucas Paes">
+                </aside><!--imitial-image-->
+            </div><!--initial-container-->
+            <div class="scroll-down">
+                <p>Role para baixo</p>
+            </div><!--scroll-down-->
+        </div><!--interface-->
+    </section><!--inicial-->
+    <main>
+        <section class="about">
+            <div class="interface">
+
             </div><!--interface-->
-            <div class="txt-footer">
-                <p>&copy; 2024 - Todos os direitos reservados. - Este site foi desenvolvido por <span><a
-                            href="https://www.linkedin.com/in/lucasmatheus96/" target="_blank">Lucas Paes</a></span>.
-                </p>
-            </div>
-        </footer>
+        </section><!--about-->
+        <section class="skills">
+            <div class="interface">
+
+            </div><!--interface-->
+        </section><!--Skills-->
+        <section class="projects">
+            <div class="interface">
+
+            </div><!--interface-->
+        </section><!--projects-->
+        <section class="services">
+            <div class="interface">
+
+            </div><!--interface-->
+        </section><!--services-->
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

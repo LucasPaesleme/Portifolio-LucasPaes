@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Ubuntu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background:var(--backgournd-color); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green-one); 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #126603; /* Cor da barra de rolagem quando o usuário passa o mouse */
+}
+
+/* Variaveis Para Cores */
+
+:root{
+  --green-one:#39ff14;
+  --green-typing:#67fe4c;
+  --background-color: #000;
+  --text-color:#fff;
+  --nav-white-theme:#ffffffdf;
+  --white:#ffff;
+  --black:#000;
+  --greenEyes: #37ff1429;
+  --Mask-image-left:linear-gradient(to bottom left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  --Mask-image-bottom:linear-gradient(to bottom , rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  --LinksStyle: text-decoration:none;
+  --hover-links:#0c4203;
+  --black-opacity:#000000df;
+  --interface-mobile: margin: 15px 10px 0px;
+    
+}
+
+
+           /* interface */
+
+.interface{
+    margin: 15px 10px 0px;
+}
+
+
+           /* MENU MOBILKE */
+
+/* LOGO */
+.logo img{
+  width: 90px;
+  height: 90px;
+  margin: 25px -35px 0;  
+}
+
+/* MENU STYLE */
+#menu{
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  height: calc(100vh - 70px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: .3s ease-in;
+}
+
+#nav.active #menu{
+  opacity: 1;
+  transition: .10s ease-in
+}
+
+#btn-mobile{
+  cursor: pointer;
+  padding: .5 1rem;
+  font-size: 1rem;
+  border: none;
+  background:none ;
+  color: var(--white);
+}
+
+/* HAMBURGER MENU STYLE*/
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 7px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 21px;
+  left: 7px;
+}
+
+           /* LIST STYLE */
+
+.container-nav nav ul li a{
+  color: var(--nav-white-theme);
+  text-decoration: none;
+  padding: .5rem;
+  display: block;
+  text-align: center;
+  transition: .3s;
+  font-size: 20px;
+  width: 400px;
+
+  
+}
+.container-nav nav ul li a:hover{
+  /* background-color: var(--green-one) ; */
+  color: var(--green-one);
+  font-weight: bolder;
+  transform: scale(1.04);  
+}
+.container-nav nav ul {
+  display: flex;
+  list-style: none;
+  gap: .5rem;
+}
+.container-nav nav ul li {
+  line-height: 3rem;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.button-container button {
+  text-align: center;
+  font-size: 20px; 
+  font-weight: bold; 
+  background-color: var(--green-one);
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius:10px ;
+  transition: .3s;
+}
+
+
+.button-container button:hover {
+  transform: scale(1.04);
+}
+
+
+.container-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 70px;
+  background-color: var(--black-opacity);
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */   
+
+                                                            /* HEADER */
+
